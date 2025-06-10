@@ -96,7 +96,8 @@ fig, ax = plt.subplots()
 df.plot(kind = 'scatter', x = 'Projeto1', y = 'Projeto2', color='darkgreen', marker='*', ax=ax)
 st.pyplot(fig)
 
-"""6) Crie um gráfico de linha que mostre a evolução dos valores dos projetos ao longo do tempo. (Peso: 2,0)
+with st.expander('Mostrar texto'):
+    """6) Crie um gráfico de linha que mostre a evolução dos valores dos projetos ao longo do tempo. (Peso: 2,0)
 
 Dicas:
 - Antes de plotar, deve criar uma nova variável `Data` que surgirá da concatenação de `ano` e `mês`. Para isto pode utilizar a função to_datetime: `pd.to_datetime(dict(year=df["ano"], month=df["mes"], day=1))`
