@@ -92,7 +92,7 @@ print(f"Projeto5: R$ {valor_presente(df['Projeto5'], 0.02):,.2f}")
 """5) Gere um gráfico de dispersão cruzando os dados do `Projeto1` e `Projeto2`, com marcadores verdes e em formato de estrela. (Peso: 2,0)"""
 
 import matplotlib.pyplot as plt
-fi, ax = plt.subplots()
+fig, ax = plt.subplots()
 df.plot(kind = 'scatter', x = 'Projeto1', y = 'Projeto2', color='darkgreen', marker='*', ax=ax)
 st.pyplot(fig)
 
