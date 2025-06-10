@@ -117,7 +117,7 @@ projetos = ["Projeto1", "Projeto2", "Projeto3", "Projeto4", "Projeto5"]
 
 plt.figure(figsize=(10,6))
 for projeto in projetos:
-    plt.plot(df["Data"], df[projeto], marker="o", label=projeto)
+    ax.plot(df["Data"], df[projeto], marker="o", label=projeto)
 
 ax.set_title("Evolução dos Fluxos de Caixa dos Projetos")
 ax.set_xlabel("Tempo (Ano-Mês)")
