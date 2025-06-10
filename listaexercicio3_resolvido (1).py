@@ -93,9 +93,9 @@ print(f"Projeto5: R$ {valor_presente(df['Projeto5'], 0.02):,.2f}")
 
 st.code(code, language ='python')
     import matplotlib.pyplot as plt
-fig, ax = plt.subplots()
-df.plot(kind = 'scatter', x = 'Projeto1', y = 'Projeto2', color='darkgreen', marker='*', ax=ax)
-st.pyplot(fig)
+    fig, ax = plt.subplots()
+    df.plot(kind = 'scatter', x = 'Projeto1', y = 'Projeto2', color='darkgreen', marker='*', ax=ax)
+    st.pyplot(fig)
 
 with st.expander('Mostrar texto'):
     """6) Crie um gráfico de linha que mostre a evolução dos valores dos projetos ao longo do tempo. (Peso: 2,0)
