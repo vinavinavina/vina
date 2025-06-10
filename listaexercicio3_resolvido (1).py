@@ -119,11 +119,11 @@ plt.figure(figsize=(10,6))
 for projeto in projetos:
     plt.plot(df["Data"], df[projeto], marker="o", label=projeto)
 
-plt.set_title("Evolução dos Fluxos de Caixa dos Projetos")
-plt.set_xlabel("Tempo (Ano-Mês)")
-plt.set_ylabel("Valor (R$)")
-plt.legend(title="Projetos")
-plt.grid(True)
-plt.tight_layout()
+ax.set_title("Evolução dos Fluxos de Caixa dos Projetos")
+ax.set_xlabel("Tempo (Ano-Mês)")
+ax.set_ylabel("Valor (R$)")
+ax.legend(title="Projetos")
+ax.grid(True)
+fig.tight_layout()
 
 st.pyplot(fig)
